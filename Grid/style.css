@@ -1,0 +1,58 @@
+html , body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#7159c1;
+}
+.container{
+    display:grid;
+    grid-template-columns: 3fr 1fr; /* Faz a duvisão das colunas por meio de linhas */
+    grid-template-rows: 20vh 70vh 10vh;
+    /*grid-gap: 20px; =cria um espaçamento entre as linhas e as colunas */
+    grid-template-areas: 'header header'
+                         'main  aside'
+                         'footer footer'
+}           
+
+header{
+    background: yellow;
+    grid-area: header;
+  
+}
+main{
+    background: blue;
+    grid-area: main;
+  
+}
+
+aside{
+    background:green;
+    grid-area: aside;
+   
+}
+
+footer{
+    background: red;
+    grid-area: footer;
+}
+
+
+/* 1)    Justify(coluna) -------------- align(linha) 
+   2)    content ---- items ---- self
+
+   justify and align
+
+            + 
+
+    content = permite alinhar o próprio grid, relativo ao espaço fora do grid
+    start, end, center, stretch, space-between, space-around
+
+            +
+
+    Items = vai permitir alinhar os itens do nosso grid, em qualquer esapço disponível, na célula que ele habitar 
+    start, end, center, stretch
+
+            +
+
+    self = Faz a mesma coisa que o items porem aplicado diretamente no item de um grid
+*/
