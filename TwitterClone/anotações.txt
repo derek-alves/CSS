@@ -1,0 +1,52 @@
+Flexbox por padrão alinha os elementos em row.
+flex-direction - Opções de alinhamento por colum ou row 
+flex-grow - ele permite que o componente seja aumentado até o limite disponível 
+flex-shrink - permite que o componente possa se espremer para caber
+flex = flex-grow + flex-shrink
+ex: flex: 1 0 
+flex-wrap: faz a quebra de linha
+
+align-items: center; = alinhamento vertical
+justify-content: space-between; = alinhamento horizontal
+align-content:center; = Alinhar os elementos quando eles estão em mais de uma linha(faz a quebra de linha)
+
+align-content:
+ + 
+flex-start:alinha tudo ao começo,
+flex-end: alinha tudo ao final,
+center:ao centro,
+space-around:linhas distribuídas uniformemente com espaço igual entre elas,
+space-between:linhas uniformemente distribuídas; a primeira linha está no início do contêiner enquanto a última está no final
+
+
+box-sizing: border-box; = pading não aumente o tamanho das dimenssão de um elemento
+
+
+
+
+div.bar .content ul{
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+div.bar .content ul li{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding:0 15px;
+}
+
+ 
+div.bar .content ul li span{
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.bar .content ul li strong{
+color: #667580;
+font-size: 18px;
+font-weight: bold;
+margin-top: 2px;
+}
